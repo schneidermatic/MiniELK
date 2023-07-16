@@ -1,0 +1,79 @@
+#******************************************************************************
+# Copyright 2020 the original author or authors.                              *
+#                                                                             *
+# Licensed under the Apache License, Version 2.0 (the "License");             *
+# you may not use this file except in compliance with the License.            *
+# You may obtain a copy of the License at                                     *
+#                                                                             *
+# http://www.apache.org/licenses/LICENSE-2.0                                  *
+#                                                                             *
+# Unless required by applicable law or agreed to in writing, software         *
+# distributed under the License is distributed on an "AS IS" BASIS,           *
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
+# See the License for the specific language governing permissions and         *
+# limitations under the License.                                              *
+#******************************************************************************/
+
+#==============================================================================
+# SCRIPT:       .xrc
+# AUTOHR:       Markus Schneider
+# CONTRIBUTERS: Markus Schneider,<YOU>
+# DATE:         2023-07-16
+# REV:          0.1.0
+# PLATFORM:     Noarch
+# PURPOSE:      Shell environment file
+#==============================================================================
+export PROJECT_NAME="ELKy"
+
+PATH=$PROJECT_HOME/resources:$PATH
+
+##----------------------------------------
+## SETUP HOST PREREQUISITES
+##----------------------------------------
+x_setup() {
+    "$RESOURCES_HOME/scripts/setup.sh"
+}
+
+##----------------------------------------
+## SHOW WEB CONSOLE ENDPOINT
+##----------------------------------------
+x_banner() {
+   cat << EOM
+  _____ _     _  __     
+ | ____| |   | |/ /   _ 
+ |  _| | |   | ' / | | |
+ | |___| |___| . \ |_| |
+ |_____|_____|_|\_\__, |
+                  |___/ 
+EOM
+}
+
+x_show_details() {
+  x_banner
+  cat << EOM                                                    
+URL: https://0.0.0.0:5601
+USER: elastic
+PASSWORD: changeme
+EOM
+}   
+
+##----------------------------------------
+## BASIC SETUP PROCEDURES
+##----------------------------------------
+x_up() {
+  docker-compose up -d
+  x_show_details 
+}   
+
+x_down() {
+  docker-compose down -v
+}
+
+##########################################
+##########################################
+#####   ---   ALL COMMANDS    ---    #####
+##########################################
+##########################################
+x_ls() {
+  declare -F | grep "x_" | sed -E 's/declare -f //'
+}

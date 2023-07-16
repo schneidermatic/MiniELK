@@ -1,0 +1,46 @@
+input {
+  heartbeat {
+    interval => 5
+    message  => 'Hello from Logstash (ls01)!'
+    type => 'heartbeat'
+  }
+  beats {
+    port => 5044
+    type => 'beat'
+  }
+  http {
+    port => 5818
+    codec => json_lines
+    type => 'event'
+  }
+}
+
+output {
+  if [type] == 'heartbeat' {
+    elasticsearch {
+      hosts    => ["https://es01:9200"]
+      index    => "heartbeat-%{+YYYY.MM.dd}"
+      user     => "elastic"
+      password => "changeme"
+      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+    }    
+  }
+  if [type] == 'beat' {
+    elasticsearch {
+      hosts    => ["https://es01:9200"]
+      index    => "%{[@metadata][beat]}-%{[@metadata][version]}"
+      user     => "elastic"
+      password => "changeme"
+      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+    }    
+  }
+  if [type] == 'event' {
+    elasticsearch {
+      hosts    => [ "https://es01:9200" ]
+      index    => "logstash-%{+YYYY.MM.dd}"
+      user     => "elastic"
+      password => "changeme"
+      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+    }
+  }
+}
