@@ -1,9 +1,8 @@
 # ELKy
 
-ELKy is a docker-compose project for running the ELK-Stack in an easy way!
+ELKy is a docker-compose project for running the ELK-Stack in an easy way.\
 This project was created for demo and learning purposes only!
 
-![Made with Herzblut](resources/assets/images/MadeWithHerzblut01.png) <br>
 Please give us a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
 if you like the project. Thank you in advance!
 
