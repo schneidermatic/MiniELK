@@ -6,7 +6,7 @@ This project was created for demo and learning purposes only!
 Please give us a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
 if you like the project. Thank you in advance!
 
-###### ELK References
+###### ELK REFERENCES
 ---
 Elasticsearch: [https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) <br/>
 Logstash: [https://www.elastic.co/guide/en/logstash/current/index.html](https://www.elastic.co/guide/en/logstash/current/index.html) <br/>
@@ -30,16 +30,16 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
 
 01. Create .wslconfig file under your Windows user profile directoy
 
-    C:\Users\<YourUsername>\.wslconfig
+        C:\Users\<YourUsername>\.wslconfig
 
 02. Add the following lines to '.wslconfig'
 
-    [wsl2]\
-    kernelCommandLine = "sysctl.vm.max_map_count=262144"
+        [wsl2]\
+        kernelCommandLine = "sysctl.vm.max_map_count=262144"
 
 4. Restart WSL from Windows Command Line
 
-    $ wsl.exe --shutdown
+        $ wsl.exe --shutdown
     
 **NOTE:** More information here https://learn.microsoft.com/en-us/windows/wsl/
    
