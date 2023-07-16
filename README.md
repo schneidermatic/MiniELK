@@ -34,7 +34,7 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
 
 02. Add the following lines to '.wslconfig'
 
-        [wsl2]\
+        [wsl2]
         kernelCommandLine = "sysctl.vm.max_map_count=262144"
 
 4. Restart WSL from Windows Command Line
