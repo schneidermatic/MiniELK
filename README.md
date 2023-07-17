@@ -1,4 +1,4 @@
-# ELKy
+![ELKy](resources/images/ELKy-Logo01.png)
 
 ELKy is a docker-compose project for running the ELK-Stack in an easy way.\
 This project was created for demo and learning purposes only!
