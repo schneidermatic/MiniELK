@@ -121,7 +121,7 @@ services:
         - SERVER_SSL_CERTIFICATE=/usr/share/kibana/config/certs/kb01/kb01.crt
         - SERVER_SSL_KEY=/usr/share/kibana/config/certs/kb01/kb01.key
         - ELASTICSEARCH_HOSTS=https://es01:9200
-        - ELASTICSEARCH_USERNAME=kibana_system
+        - ELASTICSEARCH_USERNAME=${KIBANA_USER}
         - ELASTICSEARCH_PASSWORD=${KIBANA_PASSWORD}
         - ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES=config/certs/ca/ca.crt
       mem_limit: ${MEM_LIMIT}
@@ -140,12 +140,12 @@ services:
     image: docker.elastic.co/logstash/logstash:${STACK_VERSION}
     container_name: ls01
     environment:
-      - 'LOGSTASH_USER=elastic'
-      - 'LOGSTASH_PASSWORD=changeme'
+      - 'LOGSTASH_USER=${LOGSTASH_USER}'
+      - 'LOGSTASH_PASSWORD=${LOGSTASH_PASSWORD}'
       - PIPELINE_WORKERS="2"
       - xpack.monitoring.enabled=true
-      - xpack.monitoring.elasticsearch.username=elastic
-      - xpack.monitoring.elasticsearch.password=changeme
+      - xpack.monitoring.elasticsearch.username=${ELASTIC_USER}
+      - xpack.monitoring.elasticsearch.password=${ELASTIC_PASSWORD}
       - xpack.monitoring.elasticsearch.hosts="https://es01:9200"
       - xpack.monitoring.collection.interval=30s
       - xpack.monitoring.collection.pipeline.details.enabled=true
