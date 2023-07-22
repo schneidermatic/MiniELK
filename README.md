@@ -4,8 +4,8 @@ ELKy is a docker-compose project for running the ELK-Stack in an easy way. ELKy 
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
 To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning and dev purposes without any effort. Have fun! 
 
-Please give me a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
-if you like the project. Thank you in advance!
+Please give the projet a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
+if you like it. Thx in advance!
 
 ###### ELK REFERENCES
 ---
@@ -56,12 +56,17 @@ SETUP
 
 02. Setup your environment
 
-        $ cd ELKy
+        $ cd ELKy/stack
         $ source ./.xrc
         $ x_setup
 
-    **NOTE:** x_setup modifies Linux Kernel parameters and reboots your host system after 30 seconds\
-    due to the modifications of the kernel parameters.
+    **NOTE:** x_setup modifies Linux Kernel parameters.
+
+03. Run PowerShell on you Window System for rebooting Ubuntu
+
+        $ wsl --list
+        $ wsl --shutdown "Ubuntu (Default)"
+        $ start ubuntu
       
 03. Go into the stack folder and run docker-compose
 
