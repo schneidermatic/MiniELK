@@ -4,7 +4,7 @@ ELKy is a docker-compose project for running the ELK-Stack in an easy way. ELKy 
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
 To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning and dev purposes without any effort. Have fun! 
 
-Please give the projet a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
+Please give the project a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
 if you like it. Thx in advance!
 
 ###### ELK REFERENCES
@@ -39,9 +39,13 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
         [wsl2]
         kernelCommandLine = "sysctl.vm.max_map_count=262144"
 
-03. Restart WSL from Windows Command Line
+03. Restart WSL from PowerShell
 
         $ wsl.exe --shutdown
+
+04. Start Ubuntu from PowerShell
+
+        $ start ubuntu
     
 **NOTE:** More information here https://learn.microsoft.com/en-us/windows/wsl/ \
           Basis Setup of Ubuntu under wsl2 https://youtu.be/X3bPWl9Z2D0
@@ -62,7 +66,7 @@ SETUP
 
     **NOTE:** x_setup modifies Linux Kernel parameters.
 
-03. Run PowerShell on you Window System for rebooting Ubuntu
+03. Rebooting Ubuntu from PowerShell
 
         $ wsl --list
         $ wsl --shutdown "Ubuntu (Default)"
