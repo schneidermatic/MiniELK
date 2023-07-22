@@ -24,22 +24,20 @@
 # PLATFORM:     Noarch
 # PURPOSE:      setup the elastic-stack environment
 #==============================================================================
-SLEEP_TIME=30
+SLEEP_TIME=5
 
 ##----------------------------------------
 ## SETUP FUNCTIONS
 ##----------------------------------------
 run_setup() {
-    sudo chown root:root $RESOURCES_HOME/../stack-205/resources/mb01/metricbeat.yml
     sudo $RESOURCES_HOME/scripts/prereq.sh && \
     echo "" && \
     echo "" && \
     echo "########################################" && \
-    echo "# System is rebooting in 30 seconds!!! #" && \
+    echo "# System settings are defined !!!      #" && \
     echo "########################################" && \
     echo "" && \
-    sleep $SLEEP_TIME && \
-    sudo reboot
+    sleep $SLEEP_TIME
 }
 
 ##----------------------------------------
