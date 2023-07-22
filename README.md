@@ -13,6 +13,7 @@ if you like the project. Thank you in advance!
 Elasticsearch: [https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) <br/>
 Logstash: [https://www.elastic.co/guide/en/logstash/current/index.html](https://www.elastic.co/guide/en/logstash/current/index.html) <br/>
 Kibana: [https://www.elastic.co/guide/en/kibana/current/index.html](https://www.elastic.co/guide/en/kibana/current/index.html) <br/>
+
 ###### PREREQUISITES
 ---
 ELKy is tested on Windows 11, Docker Desktop and Windows Subsystem for Linux (WSL2)
@@ -39,7 +40,7 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
         [wsl2]
         kernelCommandLine = "sysctl.vm.max_map_count=262144"
 
-4. Restart WSL from Windows Command Line
+03. Restart WSL from Windows Command Line
 
         $ wsl.exe --shutdown
     
@@ -71,33 +72,37 @@ SETUP
 
         $ ifconfig
 
-        ![Ubuntu CLI](../resources/images/image01.png)
+    ![Ubuntu CLI](./resources/images/image01.png)
 
 05. Use Kibana in your Browser for further actions
 
         https://<YourIPAddress!!!>:5601
 
-        ![Kibana Login](../resources/images/image02.png)
+    ![Kibana Login](./resources/images/image02.png)
 
-        user: elastic
-        password: changeme
+    **user: elastic**\
+    **password: changeme**
 
 06. Create your first Data 
 
-        ![First Data](../resources/images/image03.png)
+    ![First Data](./resources/images/image03.png)
 
-        Select on the left side 'Discover'
+    **Select on the left side 'Discover'**
 
 07. Create a data View
 
-        ![Data View](../resources/images/image04.png)
+    ![Data View](./resources/images/image04.png)
+    
+08. Define the Index Pattern
 
-08. Heartbeat Log Data View
+    ![Define the Index Pattern](./resources/images/image05.png)
 
-        ![Log Data View](../resources/images/image05.png)
+09. Heartbeat Log Data View
 
-    **NOTE:** In the Logstash file './stack/resources/ls01/pipeline/event.pipeline' the is an\
-              heartbeat input defined that sends events to elasticsearch in an interval of 5 sec.
+    ![Log Data View](./resources/images/image06.png)
+
+    **NOTE:** In the Logstash file './stack/resources/ls01/pipeline/event.pipeline' there is an heartbeat input defined\
+    that sends events to elasticsearch in an interval of 5 sec.
 
 Stop and Start the ELK Stack
 ---
