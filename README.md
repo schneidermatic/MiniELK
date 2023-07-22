@@ -1,7 +1,7 @@
 ![ELKy](resources/images/ELKy-Logo01.png)
 
 ELKy is a docker-compose project for running the ELK-Stack in an easy way. ELKy is a result of my former project
-'elastax' that contained various elastic stacks (recipes) - it was so called a cookbook.
+'elastax' that contained various elastic stacks (recipes) - so called a cookbook.
 To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/
 Logstash/Kibana on your local box without any effort for learning and dev purposes. Have fun! 
 
@@ -67,13 +67,13 @@ SETUP
         $ cd $HOME/ELKy/stack
         $ docker-compose up -d
 
-04. Switch to the Linux-System and get your IP-Address with ifconfig
+04. Get your IP-Address with ifconfig
 
         $ ifconfig
 
 05. Use Kibana in your Browser for further actions
 
-        https://<YourIPAddress>:5601
+        https://<YourIPAddress!!!>:5601
 
         user: elastic
         password: changeme
