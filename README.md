@@ -43,7 +43,7 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
 
         $ wsl.exe --shutdown
 
-04. Start Ubuntu from PowerShell
+04. Start Ubuntu again from PowerShell
 
         $ start ubuntu
     
@@ -53,33 +53,33 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
 SETUP
 ---
 
-01. Clone the ELKy repo
+01. In Ubuntu clone the ELKy repo
 
-        $ cd $HOME
-        $ git clone https://github.com/schneidermatic/ELKy.git
+        ubuntu~$> cd $HOME
+        ubuntu~$> git clone https://github.com/schneidermatic/ELKy.git
 
 02. Setup your environment
 
-        $ cd ELKy/stack
-        $ source ./.xrc
-        $ x_setup
+        ubuntu~$> cd ELKy/stack
+        ubuntu~$> source ./.xrc
+        ubuntu~$> x_setup
 
     **NOTE:** x_setup modifies Linux Kernel parameters.
 
-03. Rebooting Ubuntu from PowerShell
+03. Rebooting Ubuntu from PowerShell in Windows
 
-        $ wsl --list
-        $ wsl --shutdown "Ubuntu (Default)"
-        $ start ubuntu
+        windows~$> wsl --list
+        windows~$> wsl --shutdown "Ubuntu (Default)"
+        windows~$> start ubuntu
       
-03. Go into the stack folder and run docker-compose
+03. After the rebooting of Ubuntu go into the stack folder and run ...
 
-        $ cd $HOME/ELKy/stack
-        $ docker-compose up -d
+        ubuntu~$> cd $HOME/ELKy/stack
+        ubuntu~$> docker-compose up -d
 
 04. Get your IP-Address with ifconfig
 
-        $ ifconfig
+        ubuntu~$> ifconfig
 
     ![Ubuntu CLI](./resources/images/image01.png)
 
@@ -118,18 +118,18 @@ Stop and Start the ELK Stack
 
 01. Stop the docker containers
 
-        $ docker-compose stop
+        ubuntu~$> docker-compose stop
 
 02. Start the docker containers
 
-        $ docker-compose start 
+        ubuntu~$> docker-compose start 
 
 Remove the entire stack
 ---
 
 01. Remove the docker containers
 
-        $ docker-compose down -v
+        ubuntu~$> docker-compose down -v
 
     **NOTE:** when you run 'docker-compose down -v' you'll loose all your data too!!!
 
