@@ -39,13 +39,13 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
         [wsl2]
         kernelCommandLine = "sysctl.vm.max_map_count=262144"
 
-03. Restart WSL from PowerShell
+03. Shutdown Ubuntu from PowerShell
 
-        $ wsl.exe --shutdown
+        windows~$> wsl.exe --shutdown
 
 04. Start Ubuntu again from PowerShell
 
-        $ start ubuntu
+        windows~$> start ubuntu
     
 **NOTE:** More information here https://learn.microsoft.com/en-us/windows/wsl/ \
           Basis Setup of Ubuntu under wsl2 https://youtu.be/X3bPWl9Z2D0
