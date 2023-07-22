@@ -71,12 +71,33 @@ SETUP
 
         $ ifconfig
 
+        ![Ubuntu CLI](../resources/images/image01.png)
+
 05. Use Kibana in your Browser for further actions
 
         https://<YourIPAddress!!!>:5601
 
+        ![Kibana Login](../resources/images/image02.png)
+
         user: elastic
         password: changeme
+
+06. Create your first Data 
+
+        ![First Data](../resources/images/image03.png)
+
+        Select on the left side 'Discover'
+
+07. Create a data View
+
+        ![Data View](../resources/images/image04.png)
+
+08. Heartbeat Log Data View
+
+        ![Log Data View](../resources/images/image05.png)
+
+    **NOTE:** In the Logstash file './stack/resources/ls01/pipeline/event.pipeline' the is an\
+              heartbeat input defined that sends events to elasticsearch in an interval of 5 sec.
 
 Stop and Start the ELK Stack
 ---
