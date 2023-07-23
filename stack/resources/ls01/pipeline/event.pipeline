@@ -11,6 +11,7 @@ input {
   http {
     port => 5818
     codec => json_lines
+    #codec => json
     type => 'event'
   }
 }
@@ -41,6 +42,13 @@ output {
       user     => "elastic"
       password => "changeme"
       cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+      codec    => json_lines
+    }
+  }
+
+  if [type] == 'event' {
+    file {
+      path  => "/usr/share/logstash/data/logstash.log"
     }
   }
 }
