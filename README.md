@@ -7,7 +7,7 @@ To keep it simple this project contains only the ELK Stack which should help you
 Please give the project a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
 if you like it. Thx in advance!
 
-###### Elastic 8.9
+###### ELASTIC v8.9.0
 ---
 What's new in Elastic 8.9? [https://www.elastic.co/blog/whats-new-elastic-8-9-0](https://www.elastic.co/blog/whats-new-elastic-8-9-0) <br/>
 
