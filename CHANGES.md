@@ -1,5 +1,13 @@
 # CHANGES
 
+8.10.2 (2023-09-30)
+---------------------
+* Updated - Files were updated for elastic release '8.10.2'.
+
+8.9.0 (2023-07-26)
+---------------------
+* Updated - Files were updated for elastic release '8.9.0'.
+
 8.8.2 (2023-07-23)
 ---------------------
 * Added - ELKy Logo was initially committed.
