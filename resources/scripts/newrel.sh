@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #******************************************************************************
 # Copyright 2020 the original author or authors.                              *
 #                                                                             *
@@ -15,72 +16,29 @@
 #******************************************************************************/
 
 #==============================================================================
-# SCRIPT:       .xrc
+# SCRIPT:       nextrel.sh
 # AUTOHR:       Markus Schneider
 # CONTRIBUTERS: Markus Schneider,<YOU>
-# DATE:         2023-07-16
-# REV:          0.1.0
+# DATE:         2021-10-07
+# REV:          0.1.1
 # PLATFORM:     Noarch
-# PURPOSE:      Shell environment file
+# PURPOSE:      define new elastic release in '.env' file
 #==============================================================================
-export PROJECT_NAME="ELKy"
-
-PATH=$PROJECT_HOME/resources:$PATH
 
 ##----------------------------------------
-## SETUP HOST PREREQUISITES
+## SETUP FUNCTIONS
 ##----------------------------------------
-x_setup() {
-    "$RESOURCES_HOME/scripts/setup.sh"
+newrel() {
+    for file in $(find $PROJECT_HOME -name '.env'); do
+      grep -rl ELASTIC_RELEASE $file | xargs sed -i "s/ELASTIC_RELEASE=.*/$NEW_RELEASE/g"
+    done
 }
 
 ##----------------------------------------
-## SETUP NEXT RELEASE IN '.env' FILE
+## MAIN
 ##----------------------------------------
-x_newrel() {
-    "$RESOURCES_HOME/scripts/newrel.sh"
+run_main() {
+   newrel
 }
 
-##----------------------------------------
-## SHOW WEB CONSOLE ENDPOINT
-##----------------------------------------
-x_banner() {
-   cat << EOM
-  _____ _     _  __     
- | ____| |   | |/ /   _ 
- |  _| | |   | ' / | | |
- | |___| |___| . \ |_| |
- |_____|_____|_|\_\__, |
-                  |___/ 
-EOM
-}
-
-x_show_details() {
-  x_banner
-  cat << EOM                                                    
-URL: https://localhost:5601
-USER: elastic
-PASSWORD: changeme
-EOM
-}   
-
-##----------------------------------------
-## BASIC SETUP PROCEDURES
-##----------------------------------------
-x_up() {
-  docker-compose up -d
-  x_show_details 
-}   
-
-x_down() {
-  docker-compose down -v
-}
-
-##########################################
-##########################################
-#####   ---   ALL COMMANDS    ---    #####
-##########################################
-##########################################
-x_ls() {
-  declare -F | grep "x_" | sed -E 's/declare -f //'
-}
+run_main "$@"
