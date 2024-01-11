@@ -1,5 +1,9 @@
 # CHANGES
 
+8.11.4 (2024-01-11)
+---------------------
+* Updated - Files were updated for elastic release '8.11.4'.
+
 8.10.2 (2023-09-30)
 ---------------------
 * Updated - Files were updated for elastic release '8.10.2'.
