@@ -9,7 +9,7 @@ if you like it. Thx in advance!
 
 ###### ELASTIC v8.12.x
 ---
-What's new in Elastic 8.11? [https://www.elastic.co/blog/whats-new-elastic-8-12-0](https://www.elastic.co/blog/whats-new-elastic-8-12-0) <br/>
+What's new in Elastic 8.11? [https://www.elastic.co/blog/whats-new-elastic-8-12-0](https://www.elastic.co/blog/whats-new-elastic-8-13-0) <br/>
 
 ###### ELK REFERENCES
 ---
