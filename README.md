@@ -17,6 +17,10 @@ Elasticsearch: [https://www.elastic.co/guide/en/elasticsearch/reference/current/
 Logstash: [https://www.elastic.co/guide/en/logstash/current/index.html](https://www.elastic.co/guide/en/logstash/current/index.html) <br/>
 Kibana: [https://www.elastic.co/guide/en/kibana/current/index.html](https://www.elastic.co/guide/en/kibana/current/index.html) <br/>
 
+###### ELASTIC & DOCKER COMPOSE
+[https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose](Getting started with the Elastic Stack and Docker Compose: Part 1) <br/>
+[https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose-part-2](Getting started with the Elastic Stack and Docker Compose: Part 2) <br/>
+
 ###### PREREQUISITES
 ---
 ELKy is tested on Windows 11, Docker Desktop and Windows Subsystem for Linux (WSL2)
