@@ -1,5 +1,9 @@
 # CHANGES
 
+8.13.4 (2024-06-01)
+---------------------
+* Updated - Files were updated for elastic release '8.13.4'.
+
 8.13.1 (2024-06-01)
 ---------------------
 * Fixed - Due to some logstash errors 'docker-compose.yml' and 'pipeline.yml' were fixed
