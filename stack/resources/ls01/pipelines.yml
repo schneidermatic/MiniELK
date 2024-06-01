@@ -3,6 +3,6 @@
 #   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
 
 - pipeline.id: event-tier1
-  pipeline.workers: "1"
-  pipeline.batch.size: "1"
+  pipeline.workers: 1
+  pipeline.batch.size: 1
   path.config: /usr/share/logstash/pipeline/event.pipeline

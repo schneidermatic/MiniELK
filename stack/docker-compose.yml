@@ -142,7 +142,7 @@ services:
     environment:
       - 'LOGSTASH_USER=${LOGSTASH_USER}'
       - 'LOGSTASH_PASSWORD=${LOGSTASH_PASSWORD}'
-      - PIPELINE_WORKERS="2"
+      - PIPELINE_WORKERS=2
       - xpack.monitoring.enabled=true
       - xpack.monitoring.elasticsearch.username=${ELASTIC_USER}
       - xpack.monitoring.elasticsearch.password=${ELASTIC_PASSWORD}
