@@ -2,21 +2,21 @@
 
 MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is a result of my former project
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
-To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning, testing and development purposes without any effort.
+To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local sytem.
 
 Here’s why you should get started with MiniELK on your local machine:
 
 𝟭. 𝗤𝘂𝗶𝗰𝗸 𝗦𝗲𝘁𝘂𝗽 𝘄𝗶𝘁𝗵 𝗗𝗼𝗰𝗸𝗲𝗿: Spin up your environment in minutes, thanks to Docker-Compose.
 
-𝟮. 𝗘𝗻𝗵𝗮𝗻𝗰𝗲𝗱 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲: Experience the robust capabilities of Elasticsearch, Kibana, and Logstash right on your local setup.
+𝟮. 𝗜𝘀𝗼𝗹𝗮𝘁𝗲𝗱:  Play around with Elasticsearch, Kibana, and Logstash right on your local (isoloated) setup.
 
-𝟯. 𝗙𝘂𝗹𝗹 𝗖𝗼𝗻𝘁𝗿𝗼𝗹: Customize your environment to suit your unique needs without any cloud dependencies.
+𝟯. 𝗡𝗼-𝗗𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀: Customize your environment to suit your unique needs without any cloud dependencies.
 
 𝟰. 𝗖𝗼𝘀𝘁-𝗘𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁: No need for expensive cloud resources. Utilize your local hardware to its fullest potential.
 
-𝟱. 𝗧𝗲𝘀𝘁 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁: Perfect for learning and testing purposes.
+𝟱. 𝗡𝗲𝘄-𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀: Perfect for learning and testing new features.
 
-Get hands-on with MiniELK today and take a look at the newest features!
+Get hands-on with MiniELK today and take a look at the lastest features!
 
 Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
 if you like it. Thank your very much in advance!

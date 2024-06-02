@@ -3,6 +3,7 @@
 8.13.4 (2024-06-01)
 ---------------------
 * Updated - Files were updated for elastic release '8.13.4'.
+* Updated - Project was renamed into MiniELK.
 
 8.13.1 (2024-06-01)
 ---------------------
