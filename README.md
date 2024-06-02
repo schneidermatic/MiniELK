@@ -1,4 +1,4 @@
-![MiniELK](resources/images/MiniELK-Logo01.png)
+![MiniELK](resources/images/MiniELK-Logo02.png)
 
 MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is a result of my former project
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
