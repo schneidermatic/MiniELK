@@ -1,8 +1,9 @@
 ![MiniELK](resources/images/MiniELK-Logo02.png)
 
-MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is a result of my former project
-'elastax' that contained various elastic stacks (recipes) - so called cookbook.
-To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local sytem.
+MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is based on the Elastic-Stack
+and uses an Elastic Trial-License of 30 Days.
+To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch,
+Logstash, Kibana on your local sytem.
 
 Here’s why you should get started with MiniELK on your local machine:
 
