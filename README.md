@@ -2,10 +2,24 @@
 
 MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is a result of my former project
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
-To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning and dev purposes without any effort. Have fun! 
+To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning, testing and development purposes without any effort.
+
+Here’s why you should get started with MiniELK on your local machine:
+
+𝟭. 𝗤𝘂𝗶𝗰𝗸 𝗦𝗲𝘁𝘂𝗽 𝘄𝗶𝘁𝗵 𝗗𝗼𝗰𝗸𝗲𝗿: Spin up your environment in minutes, thanks to Docker-Compose.
+
+𝟮. 𝗘𝗻𝗵𝗮𝗻𝗰𝗲𝗱 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲: Experience the robust capabilities of Elasticsearch, Kibana, and Logstash right on your local setup.
+
+𝟯. 𝗙𝘂𝗹𝗹 𝗖𝗼𝗻𝘁𝗿𝗼𝗹: Customize your environment to suit your unique needs without any cloud dependencies.
+
+𝟰. 𝗖𝗼𝘀𝘁-𝗘𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁: No need for expensive cloud resources. Utilize your local hardware to its fullest potential.
+
+𝟱. 𝗧𝗲𝘀𝘁 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁: Perfect for learning and testing purposes.
+
+Get hands-on with MiniELK today and take a look at the newest features!
 
 Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
-if you like it. Thx in advance!
+if you like it. Thank your very much in advance!
 
 ###### ELASTIC v8.13.x
 ---
@@ -86,7 +100,7 @@ SETUP
         ubuntu~$> cd $HOME/MiniELK/stack
         ubuntu~$> docker-compose up -d
 
-04. Get your IP-Address with ifconfig
+04. Get your IP-Address with ifconfig (only if localhost doesn't work)
 
         ubuntu~$> ifconfig
 
