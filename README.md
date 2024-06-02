@@ -1,10 +1,10 @@
-![ELKy](resources/images/ELKy-Logo01.png)
+![MiniELK](resources/images/MiniELK-Logo01.png)
 
-ELKy is a docker-compose project for running the ELK-Stack in an easy way. ELKy is a result of my former project
+MiniELK is a docker-compose project for running the ELK-Stack in an easy way. MiniELK is a result of my former project
 'elastax' that contained various elastic stacks (recipes) - so called cookbook.
 To keep it simple this project contains only the ELK Stack which should help you to get up an running with Elasticsearch/Logstash/Kibana on your local box for learning and dev purposes without any effort. Have fun! 
 
-Please give the project a [GitHub Star](https://github.com/schneidermatic/ELKy/stargazers)
+Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
 if you like it. Thx in advance!
 
 ###### ELASTIC v8.13.x
@@ -24,7 +24,7 @@ Kibana: [https://www.elastic.co/guide/en/kibana/current/index.html](https://www.
 
 ###### PREREQUISITES
 ---
-ELKy is tested on Windows 11, Docker Desktop and Windows Subsystem for Linux (WSL2)
+MiniELK is tested on Windows 11, Docker Desktop and Windows Subsystem for Linux (WSL2)
 
 Name           | Reference    
 -------------- | --------------- 
@@ -62,14 +62,14 @@ Before you can run the ELK-Stack with WSL2 you have to change the '.wslconfig' f
 SETUP
 ---
 
-01. In Ubuntu clone the ELKy repo
+01. In Ubuntu clone the MiniELK repo
 
         ubuntu~$> cd $HOME
-        ubuntu~$> git clone https://github.com/schneidermatic/ELKy.git
+        ubuntu~$> git clone https://github.com/schneidermatic/MiniELK.git
 
 02. Setup your environment
 
-        ubuntu~$> cd ELKy/stack
+        ubuntu~$> cd MiniELK/stack
         ubuntu~$> source ./.xrc
         ubuntu~$> x_setup
 
@@ -83,7 +83,7 @@ SETUP
       
 03. After the rebooting of Ubuntu go into the stack folder and run ...
 
-        ubuntu~$> cd $HOME/ELKy/stack
+        ubuntu~$> cd $HOME/MiniELK/stack
         ubuntu~$> docker-compose up -d
 
 04. Get your IP-Address with ifconfig
@@ -94,7 +94,7 @@ SETUP
 
 05. Use Kibana in your Browser for further actions
 
-        https://<YourIPAddress!!!>:5601
+        https://localhost:5601
 
     ![Kibana Login](./resources/images/image02.png)
 
