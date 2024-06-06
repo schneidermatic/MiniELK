@@ -2,6 +2,7 @@
 
 8.13.4 (2024-06-01)
 ---------------------
+* Fixed - Error was fixed in 'docker-compose.yml' file.
 * Updated - Files were updated for elastic release '8.13.4'.
 * Updated - Project was renamed into MiniELK.
 
