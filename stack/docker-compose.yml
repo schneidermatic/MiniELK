@@ -152,7 +152,7 @@ services:
       - xpack.monitoring.enabled=true
       - xpack.monitoring.elasticsearch.username=${ELASTIC_USER}
       - xpack.monitoring.elasticsearch.password=${ELASTIC_PASSWORD}
-      - xpack.monitoring.elasticsearch.hosts="https://es01:9200"
+      - xpack.monitoring.elasticsearch.hosts=https://es01:9200
       - xpack.monitoring.collection.interval=30s
       - xpack.monitoring.collection.pipeline.details.enabled=true
       - xpack.monitoring.elasticsearch.ssl.certificate_authority=/usr/share/logstash/certs/ca/ca.crt
