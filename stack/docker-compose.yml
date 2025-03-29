@@ -69,7 +69,7 @@ services:
     depends_on:
       setup:
         condition: service_healthy
-    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    image: docker.elastic.co/elasticsearch/elasticsearch-wolfi:${STACK_VERSION}
     volumes:
       - ~/elastax/elastax-010/:/usr/share/elasticsearch/backup
       - certs:/usr/share/elasticsearch/config/certs

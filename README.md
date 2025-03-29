@@ -22,22 +22,22 @@ Get hands-on with MiniELK today and take a look at the lastest features!
 Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
 if you like it. Thank your very much in advance!
 
-###### ELASTIC v8.15.x
+### ELASTIC v8.17.x
 ---
-What's new in Elastic 8.15.x? [https://www.elastic.co/blog/whats-new-elastic-8-15-0](https://www.elastic.co/blog/whats-new-elastic-8-15-0) <br/>
+What's new in Elastic 8.17.x? [https://www.elastic.co/blog/whats-new-elastic-8-17-0](https://www.elastic.co/blog/whats-new-elastic-8-17-0) <br/>
 
-###### ELK REFERENCES
+### ELK REFERENCES
 ---
 Elasticsearch: [https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) <br/>
 Logstash: [https://www.elastic.co/guide/en/logstash/current/index.html](https://www.elastic.co/guide/en/logstash/current/index.html) <br/>
 Kibana: [https://www.elastic.co/guide/en/kibana/current/index.html](https://www.elastic.co/guide/en/kibana/current/index.html) <br/>
 
-###### ELASTIC & DOCKER COMPOSE
+### ELASTIC & DOCKER COMPOSE
 ---
 [Getting started with the Elastic Stack and Docker Compose: Part 1](https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose) <br/>
 [Getting started with the Elastic Stack and Docker Compose: Part 2](https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose-part-2) <br/>
 
-###### PREREQUISITES
+### PREREQUISITES
 ---
 MiniELK is tested on Windows 11, Docker Desktop and Windows Subsystem for Linux (WSL2)
 
