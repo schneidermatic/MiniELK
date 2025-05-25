@@ -22,9 +22,9 @@ Get hands-on with MiniELK today and take a look at the lastest features!
 Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
 if you like it. Thank your very much in advance!
 
-### ELASTIC v8.17.x
+### ELASTIC v8.18.x
 ---
-What's new in Elastic 8.17.x? [https://www.elastic.co/blog/whats-new-elastic-8-17-0](https://www.elastic.co/blog/whats-new-elastic-8-17-0) <br/>
+What's new in Elastic 8.18.x? [https://www.elastic.co/blog/elastic-stack-8-18-1-released](https://www.elastic.co/blog/elastic-stack-8-18-1-released) <br/>
 
 ### ELK REFERENCES
 ---

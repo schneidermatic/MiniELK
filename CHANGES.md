@@ -1,4 +1,9 @@
 # CHANGES
+
+8.18.1 (2025-05-25)
+---------------------
+* Updated - Files were updated for elastic release '8.18.1'.
+
 8.17.4 (2025-03-29)
 ---------------------
 * Updated - Files were updated for elastic release '8.17.4'.
