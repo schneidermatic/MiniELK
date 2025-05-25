@@ -1,5 +1,10 @@
 # CHANGES
 
+9.0.1 (2025-05-25)
+---------------------
+* Updated - Files were updated for elastic release '9.0.1'.
+* Added - Branch '9.0.1' was initially committed.
+
 8.18.1 (2025-05-25)
 ---------------------
 * Updated - Files were updated for elastic release '8.18.1'.

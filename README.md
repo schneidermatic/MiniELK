@@ -24,7 +24,7 @@ if you like it. Thank your very much in advance!
 
 ### ELASTIC v8.18.x
 ---
-What's new in Elastic 8.18.x? [https://www.elastic.co/blog/elastic-stack-8-18-1-released](https://www.elastic.co/blog/elastic-stack-8-18-1-released) <br/>
+What's new in Elastic 9.x? [https://www.elastic.co/blog/elastic-stack-9-0-1-released](https://www.elastic.co/blog/elastic-stack-9-0-1-released) <br/>
 
 ### ELK REFERENCES
 ---
