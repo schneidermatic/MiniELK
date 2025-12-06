@@ -1,9 +1,9 @@
 # CHANGES
 
-9.0.1 (2025-05-25)
+9.1.4 (2025-12-06)
 ---------------------
-* Updated - Files were updated for elastic release '9.0.1'.
-* Added - Branch '9.0.1' was initially committed.
+* Updated - Files were updated for elastic release '9.1.4'.
+* Added - Branch '9.1.4' was initially committed.
 
 8.18.1 (2025-05-25)
 ---------------------

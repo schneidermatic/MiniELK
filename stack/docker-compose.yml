@@ -69,9 +69,9 @@ services:
     depends_on:
       setup:
         condition: service_healthy
-    image: docker.elastic.co/elasticsearch/elasticsearch-wolfi:${STACK_VERSION}
+    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
-      - ~/elastax/elastax-010/:/usr/share/elasticsearch/backup
+      - ~/minisce/backup/:/usr/share/elasticsearch/backup
       - certs:/usr/share/elasticsearch/config/certs
       - esdata01:/usr/share/elasticsearch/data
     ports:
@@ -95,8 +95,8 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=certs/ca/ca.crt
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
-      - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
-    mem_limit: ${MEM_LIMIT}
+#     - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
+#   mem_limit: ${MEM_LIMIT}
     ulimits:
       memlock:
         soft: -1
@@ -148,6 +148,7 @@ services:
     environment:
       - 'LOGSTASH_USER=${LOGSTASH_USER}'
       - 'LOGSTASH_PASSWORD=${LOGSTASH_PASSWORD}'
+      - 'allow_superuser=true'
       - PIPELINE_WORKERS=2
       - xpack.monitoring.enabled=true
       - xpack.monitoring.elasticsearch.username=${ELASTIC_USER}
@@ -155,12 +156,12 @@ services:
       - xpack.monitoring.elasticsearch.hosts=https://es01:9200
       - xpack.monitoring.collection.interval=30s
       - xpack.monitoring.collection.pipeline.details.enabled=true
-      - xpack.monitoring.elasticsearch.ssl.certificate_authority=/usr/share/logstash/certs/ca/ca.crt
+      - xpack.monitoring.elasticsearch.ssl.certificate_authority=config/certs/ca/ca.crt
     volumes:
       - './resources/ls01/pipelines.yml:/usr/share/logstash/config/pipelines.yml'
       - './resources/ls01/pipeline:/usr/share/logstash/pipeline'
       - lsdata01:/usr/share/logstash/data
-      - certs:/usr/share/logstash/certs
+      - certs:/usr/share/logstash/config/certs
     ports: 
       - '9600:9600'
       - '5044:5044'
@@ -178,4 +179,3 @@ volumes:
   esdata01:
   kbdata01:
   lsdata01:
-

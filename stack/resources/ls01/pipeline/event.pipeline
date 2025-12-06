@@ -23,7 +23,7 @@ output {
       index    => "heartbeat-%{+YYYY.MM.dd}"
       user     => "elastic"
       password => "changeme"
-      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+      ssl_certificate_authorities => "/usr/share/logstash/config/certs/ca/ca.crt"
     }    
   }
   if [type] == 'beat' {
@@ -32,7 +32,7 @@ output {
       index    => "%{[@metadata][beat]}-%{[@metadata][version]}"
       user     => "elastic"
       password => "changeme"
-      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+      ssl_certificate_authorities => "/usr/share/logstash/config/certs/ca/ca.crt"
     }    
   }
   if [type] == 'event' {
@@ -41,7 +41,7 @@ output {
       index    => "logstash-%{+YYYY.MM.dd}"
       user     => "elastic"
       password => "changeme"
-      cacert   => "/usr/share/logstash/certs/ca/ca.crt"
+      ssl_certificate_authorities => "/usr/share/logstash/config/certs/ca/ca.crt"
       codec    => json_lines
     }
   }
