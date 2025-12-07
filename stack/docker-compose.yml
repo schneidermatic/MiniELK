@@ -71,7 +71,7 @@ services:
         condition: service_healthy
     image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     volumes:
-      - ~/minisce/backup/:/usr/share/elasticsearch/backup
+      - ~/minielk/backup/:/usr/share/elasticsearch/backup
       - certs:/usr/share/elasticsearch/config/certs
       - esdata01:/usr/share/elasticsearch/data
     ports:
@@ -95,6 +95,7 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=certs/ca/ca.crt
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
+      - path.repo=/usr/share/elasticsearch/backup
 #     - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
 #   mem_limit: ${MEM_LIMIT}
     ulimits:
