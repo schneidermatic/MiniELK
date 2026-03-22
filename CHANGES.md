@@ -1,5 +1,10 @@
 # CHANGES
 
+9.3.2 (2026-03-22)
+---------------------
+* Updated - Files were updated for elastic release '9.3.2'.
+* Added - Branch '9.3.2' was initially committed.
+
 9.2.2 (2025-12-06)
 ---------------------
 * Updated - Files were updated for elastic release '9.2.2'.
