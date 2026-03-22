@@ -9,7 +9,7 @@ Here’s why you should get started with MiniELK on your local machine:
 
 𝟭. 𝗤𝘂𝗶𝗰𝗸 𝗦𝗲𝘁𝘂𝗽 𝘄𝗶𝘁𝗵 𝗗𝗼𝗰𝗸𝗲𝗿: Spin up your environment in minutes, thanks to Docker-Compose.
 
-𝟮. 𝗜𝘀𝗼𝗹𝗮𝘁𝗲𝗱:  Play around with Elasticsearch, Kibana, and Logstash right on your local (isoloated) setup.
+𝟮. 𝗜𝘀𝗼𝗹𝗮𝘁𝗲𝗱:  Play around with Elasticsearch, Kibana, and Logstash right on your local (isolated) setup.
 
 𝟯. 𝗡𝗼-𝗗𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀: Customize your environment to suit your unique needs without any cloud dependencies.
 
@@ -17,14 +17,14 @@ Here’s why you should get started with MiniELK on your local machine:
 
 𝟱. 𝗡𝗲𝘄-𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀: Perfect for learning and testing new features.
 
-Get hands-on with MiniELK today and take a look at the lastest features!
+Get hands-on with MiniELK today and take a look at the latest features!
 
 Please give the project a [GitHub Star](https://github.com/schneidermatic/MiniELK/stargazers)
-if you like it. Thank your very much in advance!
+if you like it. Thank you very much in advance!
 
 ### ELASTIC v9.x
 ---
-What's new in Elastic 9.x? [https://www.elastic.co/blog/elastic-stack-9-1-8-released](https://www.elastic.co/blog/elastic-stack-9-1-8-released) <br/>
+What's new in Elastic 9.x? [https://www.elastic.co/blog/elastic-stack-9-3-2-released](https://www.elastic.co/blog/elastic-stack-9-3-2-released) <br/>
 
 ### ELK REFERENCES
 ---
@@ -96,7 +96,7 @@ SETUP
         windows~$> wsl --shutdown "Ubuntu (Default)"
         windows~$> start ubuntu
       
-03. After the rebooting of Ubuntu go into the stack folder and run ...
+04. After the rebooting of Ubuntu go into the stack folder and run ...
 
         ubuntu~$> cd $HOME/MiniELK/stack
         ubuntu~$> docker-compose up -d
@@ -116,16 +116,16 @@ SETUP
     **user: elastic**\
     **password: changeme**
 
-06. Create your first Data 
+06. Create your first Data
 
     ![First Data](./resources/images/image03.png)
 
     **Select on the left side 'Discover'**
 
-07. Create a data View
+07. Create a Data View
 
     ![Data View](./resources/images/image04.png)
-    
+
 08. Define the Index Pattern
 
     ![Define the Index Pattern](./resources/images/image05.png)
