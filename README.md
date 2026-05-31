@@ -24,7 +24,7 @@ if you like it. Thank you very much in advance!
 
 ### ELASTIC v9.x
 ---
-What's new in Elastic 9.x? [https://www.elastic.co/blog/elastic-stack-9-3-2-released](https://www.elastic.co/blog/elastic-stack-9-3-2-released) <br/>
+What's new in Elastic 9.x? [https://www.elastic.co/blog/elastic-stack-9-4-2-released](https://www.elastic.co/blog/elastic-stack-9-4-2-released) <br/>
 
 ### ELK REFERENCES
 ---
