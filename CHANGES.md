@@ -1,6 +1,12 @@
 # CHANGES
 
-9.3.2 (2026-05-31)
+9.5.0 (2026-08-08)
+---------------------
+* Updated - Files were updated for elastic release '9.5.0'.
+* Added - Branch '9.5.0' was initially committed.
+* Added - Elastic Agents Skills were added.
+
+9.4.2 (2026-05-31)
 ---------------------
 * Updated - Files were updated for elastic release '9.4.2'.
 * Added - Branch '9.4.2' was initially committed.
